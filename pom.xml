@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.vals.gwtbootstrap5</groupId>
+  <artifactId>gwt-bootstrap5</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+   <dependencies>
+
+    <!-- https://mvnrepository.com/artifact/org.gwtproject/gwt-servlet -->
+    <dependency>
+      <groupId>org.gwtproject</groupId>
+      <artifactId>gwt-servlet</artifactId>
+      <version>2.12.2</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.gwtproject/gwt-user -->
+    <dependency>
+      <groupId>org.gwtproject</groupId>
+      <artifactId>gwt-user</artifactId>
+      <version>2.12.2</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.gwtproject/gwt-dev -->
+    <dependency>
+      <groupId>org.gwtproject</groupId>
+      <artifactId>gwt-dev</artifactId>
+      <version>2.12.2</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.google.elemental2/elemental2-core -->
+    <dependency>
+      <groupId>com.google.elemental2</groupId>
+      <artifactId>elemental2-core</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.google.elemental2/elemental2-dom -->
+    <dependency>
+      <groupId>com.google.elemental2</groupId>
+      <artifactId>elemental2-dom</artifactId>
+      <version>1.2.3</version>
+    </dependency>
+
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>2.10.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  
+</project>
